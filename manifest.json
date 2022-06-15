@@ -732,7 +732,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Add-PnPPlannerTask.html",
-          "hash": "pqQ/AMMWlI74I3h8fIzpmQ=="
+          "hash": "/iTGJpxzwOgnW04gSzxKog=="
         }
       },
       "is_incremental": false,
@@ -876,7 +876,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Add-PnPSiteScriptPackage.html",
-          "hash": "InA3G0Xii0iPge3BWxkklg=="
+          "hash": "HzUYTeMV9H1rbmyikKZeuA=="
         }
       },
       "is_incremental": false,
@@ -6516,7 +6516,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Set-PnPList.html",
-          "hash": "CfuXUd3O5l6FoauNAG3muA=="
+          "hash": "V+nP+turfWCV2xmYvbrG1g=="
         }
       },
       "is_incremental": false,
@@ -7581,7 +7581,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PnPSiteDesignFromWeb.html",
-          "hash": "JbXlXfc3gkYNPIOzNSpMaw=="
+          "hash": "uf0xDQEvf6G/57BnAkmAdg=="
         }
       },
       "is_incremental": false,
@@ -7593,7 +7593,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PnPTeamsApp.html",
-          "hash": "KgtvpGXJzemsQ52TuhBdZw=="
+          "hash": "Xiza1Fbi+1fTiL0vZmjYTw=="
         }
       },
       "is_incremental": false,
@@ -7605,7 +7605,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PnPTeamsUser.html",
-          "hash": "mc3yEQGVV7zuUarNRxKPww=="
+          "hash": "PRWJGOg2GxgJGmaSs9ndlA=="
         }
       },
       "is_incremental": false,
@@ -7617,7 +7617,7 @@
       "output": {
         ".html": {
           "relative_path": "cmdlets/Update-PnPUserType.html",
-          "hash": "0ijEM1lvqgQ8MSde8YM83g=="
+          "hash": "mX9p4BUMPwHdg/tdjklmxQ=="
         }
       },
       "is_incremental": false,
