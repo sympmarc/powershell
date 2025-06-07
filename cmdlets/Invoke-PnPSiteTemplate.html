@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html lang="en">
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Invoke-PnPSiteTemplate | PnP PowerShell </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Invoke-PnPSiteTemplate | PnP PowerShell ">
-    <meta name="generator" content="docfx 2.51.0.0">
-    <meta name="description" content="PnP PowerShell is an open source, community driven, PowerShell Module designed to work with Microsoft 365.">
+    <meta name="generator" content="docfx ">
+  <meta name="description" content="PnP PowerShell is an open source, community driven, PowerShell Module designed to work with Microsoft 365.">
     <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
@@ -17,13 +17,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    <meta property="docfx:newtab" content="true">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
               </form>
             </div>
           </div>
-        </nav>        
+        </nav>
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,17 +57,17 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -79,70 +79,91 @@
             <article class="content wrap" id="_content" data-uid="">
                 
                   <div class="contribution-panel mobile-hide pull-right">
-                      <a href="https://github.com/pnp/powershell/blob/dev/documentation/#L1" title="Improve this Doc" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
+                      <a href="https://github.com/pnp/powershell/blob/dev/documentation/#L1" title="Edit this page" class="improve-doc-lg"><i class="glyphicon glyphicon-pencil"></i></a>
                   </div>
-                    <h1 id="invoke-pnpsitetemplate">Invoke-PnPSiteTemplate</h1>
+  <h1 id="invoke-pnpsitetemplate">Invoke-PnPSiteTemplate</h1>
 
 <h2 id="synopsis">SYNOPSIS</h2>
 <p>Applies a site template to a web</p>
 <h2 id="syntax">SYNTAX</h2>
 <h3 id="path">Path</h3>
-<pre><code class="lang-powershell">Invoke-PnPSiteTemplate [-Path] &lt;String&gt; [-TemplateId &lt;String&gt;] [-ResourceFolder &lt;String&gt;]
+<pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path &lt;String&gt; [-TemplateId &lt;String&gt;] [-ResourceFolder &lt;String&gt;]
  [-OverwriteSystemPropertyBagValues] [-IgnoreDuplicateDataRowErrors] [-ProvisionContentTypesToSubWebs]
  [-ProvisionFieldsToSubWebs] [-ClearNavigation] [-Parameters &lt;Hashtable&gt;] [-Handlers &lt;Handlers&gt;]
  [-ExcludeHandlers &lt;Handlers&gt;] [-ExtensibilityHandlers &lt;ExtensibilityHandler[]&gt;]
  [-TemplateProviderExtensions &lt;ITemplateProviderExtension[]&gt;] 
- [-Connection &lt;PnPConnection&gt;] [&lt;CommonParameters&gt;]
+ [-Url &lt;String&gt;]
+ [-Connection &lt;PnPConnection&gt;] 
 </code></pre>
 <h3 id="instance">Instance</h3>
-<pre><code class="lang-powershell">Invoke-PnPSiteTemplate [-TemplateId &lt;String&gt;] [-ResourceFolder &lt;String&gt;]
+<pre><code class="lang-powershell">Invoke-PnPSiteTemplate -InputInstance &lt;SiteTemplate&gt; [-TemplateId &lt;String&gt;] [-ResourceFolder &lt;String&gt;]
  [-OverwriteSystemPropertyBagValues] [-IgnoreDuplicateDataRowErrors] [-ProvisionContentTypesToSubWebs]
  [-ProvisionFieldsToSubWebs] [-ClearNavigation] [-Parameters &lt;Hashtable&gt;] [-Handlers &lt;Handlers&gt;]
  [-ExcludeHandlers &lt;Handlers&gt;] [-ExtensibilityHandlers &lt;ExtensibilityHandler[]&gt;]
- [-TemplateProviderExtensions &lt;ITemplateProviderExtension[]&gt;] [-InputInstance &lt;SiteTemplate&gt;]
- [-Connection &lt;PnPConnection&gt;] [&lt;CommonParameters&gt;]
+ [-TemplateProviderExtensions &lt;ITemplateProviderExtension[]&gt;] 
+ [-Url &lt;String&gt;]
+ [-Connection &lt;PnPConnection&gt;] 
+</code></pre>
+<h3 id="stream">Stream</h3>
+<pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Stream &lt;Stream&gt; [-TemplateId &lt;String&gt;] [-ResourceFolder &lt;String&gt;]
+ [-OverwriteSystemPropertyBagValues] [-IgnoreDuplicateDataRowErrors] [-ProvisionContentTypesToSubWebs]
+ [-ProvisionFieldsToSubWebs] [-ClearNavigation] [-Parameters &lt;Hashtable&gt;] [-Handlers &lt;Handlers&gt;]
+ [-ExcludeHandlers &lt;Handlers&gt;] [-ExtensibilityHandlers &lt;ExtensibilityHandler[]&gt;]
+ [-TemplateProviderExtensions &lt;ITemplateProviderExtension[]&gt;] 
+ [-Url &lt;String&gt;]
+ [-Connection &lt;PnPConnection&gt;] 
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
+<p>Allows to apply a site template on a web. The template can be in XML format or a .pnp package. The cmdlet will apply the template to the web you are currently connected to, unless you provide the -Url parameter. You can specify which parts of the template to apply by using the Handlers parameter or just omit it to apply the entire template.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
+<pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.xml -Url https://tenant.sharepoint.com/sites/sitename
+</code></pre>
+<p>Applies a site template in XML format to the the provided site collection</p>
+<h3 id="example-2">EXAMPLE 2</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.xml
 </code></pre>
-<p>Applies a site template in XML format to the current web.</p>
-<h3 id="example-2">EXAMPLE 2</h3>
+<p>Applies a site template in XML format to the currently connected to site</p>
+<h3 id="example-3">EXAMPLE 3</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.xml -ResourceFolder c:\provisioning\resources
 </code></pre>
 <p>Applies a site template in XML format to the current web. Any resources like files that are referenced in the template will be retrieved from the folder as specified with the ResourceFolder parameter.</p>
-<h3 id="example-3">EXAMPLE 3</h3>
+<h3 id="example-4">EXAMPLE 4</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.xml -Parameters @{&quot;ListTitle&quot;=&quot;Projects&quot;;&quot;parameter2&quot;=&quot;a second value&quot;}
 </code></pre>
-<p>Applies a site template in XML format to the current web. It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:<key>} token.<p>
+<p>Applies a site template in XML format to the current web. It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:<key>} token.</key></p>
 <p>For instance with the example above, specifying {parameter:ListTitle} in your template will translate to 'Projects' when applying the template. These tokens can be used in most string values in a template.</p>
-<h3 id="example-4">EXAMPLE 4</h3>
+<h3 id="example-5">EXAMPLE 5</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.xml -Handlers Lists, SiteSecurity
 </code></pre>
 <p>Applies a site template in XML format to the current web. It will only apply the lists and site security part of the template.</p>
-<h3 id="example-5">EXAMPLE 5</h3>
+<h3 id="example-6">EXAMPLE 6</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path template.pnp
 </code></pre>
 <p>Applies a site template from a pnp package to the current web.</p>
-<h3 id="example-6">EXAMPLE 6</h3>
+<h3 id="example-7">EXAMPLE 7</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path &quot;https://tenant.sharepoint.com/sites/templatestorage/Documents/template.pnp&quot;
 </code></pre>
 <p>Applies a site template from a pnp package stored in a library to the current web.</p>
-<h3 id="example-7">EXAMPLE 7</h3>
+<h3 id="example-8">EXAMPLE 8</h3>
 <pre><code class="lang-powershell">$handler1 = New-PnPExtensibilityHandlerObject -Assembly Contoso.Core.Handlers -Type Contoso.Core.Handlers.MyExtensibilityHandler1
 $handler2 = New-PnPExtensibilityHandlerObject -Assembly Contoso.Core.Handlers -Type Contoso.Core.Handlers.MyExtensibilityHandler2
 Invoke-PnPSiteTemplate -Path NewTemplate.xml -ExtensibilityHandlers $handler1,$handler2
 </code></pre>
 <p>This will create two new ExtensibilityHandler objects that are run while provisioning the template</p>
-<h3 id="example-8">EXAMPLE 8</h3>
+<h3 id="example-9">EXAMPLE 9</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path .\ -InputInstance $template
 </code></pre>
 <p>Applies a site template from an in-memory instance of a SiteTemplate type of the PnP Core Component, reading the supporting files, if any, from the current (.) path. The syntax can be used together with any other supported parameters.</p>
-<h3 id="example-9">EXAMPLE 9</h3>
+<h3 id="example-10">EXAMPLE 10</h3>
 <pre><code class="lang-powershell">Invoke-PnPSiteTemplate -Path .\template.xml -TemplateId &quot;MyTemplate&quot;
 </code></pre>
 <p>Applies the SiteTemplate with the ID &quot;MyTemplate&quot; located in the template definition file template.xml.</p>
+<h3 id="example-11">EXAMPLE 11</h3>
+<pre><code class="lang-powershell">$stream = Get-PnPFile -Url https://tenant.sharepoint.com/sites/TemplateGallery/Shared%20Documents/ProjectSite.pnp -AsMemoryStream
+Invoke-PnPSiteTemplate -Stream $stream
+</code></pre>
+<p>Downloads the ProjectSite.pnp template from the TemplateGallery document library and applies it to the currently connected to site.</p>
 <h2 id="parameters">PARAMETERS</h2>
 <h3 id="-clearnavigation">-ClearNavigation</h3>
 <p>Override the RemoveExistingNodes attribute in the Navigation elements of the template. If you specify this value the navigation nodes will always be removed before adding the nodes in the template</p>
@@ -170,7 +191,7 @@ Accept wildcard characters: False
 <p>Allows you to run all handlers, excluding the ones specified.</p>
 <pre><code class="lang-yaml">Type: Handlers
 Parameter Sets: (All)
-Accepted values: None, AuditSettings, ComposedLook, CustomActions, ExtensibilityProviders, Features, Fields, Files, Lists, Pages, Publishing, RegionalSettings, SearchSettings, SitePolicy, SupportedUILanguages, TermGroups, Workflows, SiteSecurity, ContentTypes, PropertyBagEntries, PageContents, WebSettings, Navigation, ImageRenditions, ApplicationLifecycleManagement, Tenant, WebApiPermissions, SiteHeader, SiteFooter, Theme, SiteSettings, All
+Accepted values: All, ApplicationLifecycleManagement, AuditSettings, ComposedLook, ContentTypes, CustomActions, ExtensibilityProviders, Features, Fields, Files, ImageRenditions, Lists, Navigation, None, PageContents, Pages, PropertyBagEntries, Publishing, RegionalSettings, SearchSettings, SiteFooter, SiteHeader, SitePolicy, SiteSecurity, SiteSettings, SupportedUILanguages, SyntexModels, Tenant, TermGroups, Theme, WebApiPermissions, WebSettings, Workflows
 
 Required: False
 Position: Named
@@ -179,7 +200,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-extensibilityhandlers">-ExtensibilityHandlers</h3>
-<p>Allows you to specify ExtensbilityHandlers to execute while applying a template</p>
+<p>Allows you to specify ExtensibilityHandlers to execute while applying a template</p>
 <pre><code class="lang-yaml">Type: ExtensibilityHandler[]
 Parameter Sets: (All)
 
@@ -190,10 +211,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-handlers">-Handlers</h3>
-<p>Allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Visit <a href="https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers">https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers</a> for possible values.</p>
+<p>Allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Visit <a href="https://learn.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers">https://learn.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers</a> for possible values.</p>
 <pre><code class="lang-yaml">Type: Handlers
 Parameter Sets: (All)
-Accepted values: None, AuditSettings, ComposedLook, CustomActions, ExtensibilityProviders, Features, Fields, Files, Lists, Pages, Publishing, RegionalSettings, SearchSettings, SitePolicy, SupportedUILanguages, TermGroups, Workflows, SiteSecurity, ContentTypes, PropertyBagEntries, PageContents, WebSettings, Navigation, ImageRenditions, ApplicationLifecycleManagement, Tenant, WebApiPermissions, SiteHeader, SiteFooter, Theme, SiteSettings, All
+Accepted values: All, ApplicationLifecycleManagement, AuditSettings, ComposedLook, ContentTypes, CustomActions, ExtensibilityProviders, Features, Fields, Files, ImageRenditions, Lists, Navigation, None, PageContents, Pages, PropertyBagEntries, Publishing, RegionalSettings, SearchSettings, SiteFooter, SiteHeader, SitePolicy, SiteSecurity, SiteSettings, SupportedUILanguages, SyntexModels, Tenant, TermGroups, Theme, WebApiPermissions, WebSettings, Workflows
 
 Required: False
 Position: Named
@@ -214,6 +235,7 @@ Accept wildcard characters: False
 </code></pre>
 <h3 id="-inputinstance">-InputInstance</h3>
 <p>Allows you to provide an in-memory instance of the SiteTemplate type of the PnP Core Component. When using this parameter, the -Path parameter refers to the path of any supporting file for the template.</p>
+<p>Note that using a .pnp package containing additional files will not work through this method. You should either extract the files to the folder you specify through -Path yourself first or use -Stream to stream the package to be invoked directly.</p>
 <pre><code class="lang-yaml">Type: SiteTemplate
 Parameter Sets: Instance
 
@@ -289,6 +311,17 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
+<h3 id="-stream">-Stream</h3>
+<p>Allows a stream to be passed in. This is useful when you want to apply a template that is stored in a stream, for example when you download it from SharePoint Online so you can keep it in memory and don't (temporarily) need to store it anywhere. It only supports .pnp files, not .xml files. It also supports having additional files stored in the .pnp file.</p>
+<pre><code class="lang-yaml">Type: Stream
+Parameter Sets: Stream
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
 <h3 id="-templateid">-TemplateId</h3>
 <p>ID of the template to use from the xml file containing the provisioning template. If not specified and multiple SiteTemplate elements exist, the last one will be used.</p>
 <pre><code class="lang-yaml">Type: String
@@ -311,9 +344,21 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
+<h3 id="-url">-Url</h3>
+<p>Optionally allows you to specify the URL of the web to apply the template to. If not specified, the template will be applied to the currently connected web. It takes precedence over the current context and requires a full URL to a web, i.e. <a href="https://tenant.sharepoint.com/sites/somesite">https://tenant.sharepoint.com/sites/somesite</a>, not just a site collection relative URL.</p>
+<pre><code class="lang-yaml">Type: string
+Parameter Sets: (All)
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
 <h2 id="related-links">RELATED LINKS</h2>
 <p><a href="https://aka.ms/m365pnp">Microsoft 365 Patterns and Practices</a></p>
-</key></article>
+
+</article>
           </div>
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
@@ -322,7 +367,7 @@ Accept wildcard characters: False
             </div>
           </div>        </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -330,13 +375,14 @@ Accept wildcard characters: False
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-            <img src="https://telemetry.sharepointpnp.com/@pnp.github.io/index/" alt="spacer">
+      
+      <span>Generated by <strong>DocFX</strong></span>
+            <img src="https://m365-visitor-stats.azurewebsites.net/@pnp.github.io/index/" alt="spacer">
           </div>
         </div>
-      </footer>    </div>
-    
+      </footer>
+    </div>
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
