@@ -148,6 +148,17 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
+<h3 id="-clearsubscopes">-ClearSubScopes</h3>
+<p>If a permission inheritance break is needed or forced with -ClearExisting, the unique permissions are cleared from child objects and they can inherit role assignments from this object.</p>
+<pre><code class="lang-yaml">Type: Boolean
+Parameter Sets: User, Group
+
+Required: False
+Position: Named
+Default value: True
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
 <h3 id="-connection">-Connection</h3>
 <p>Optional connection to be used by the cmdlet. Retrieve the value for this parameter by either specifying -ReturnConnection on Connect-PnPOnline or by executing Get-PnPConnection.</p>
 <pre><code class="lang-yaml">Type: PnPConnection

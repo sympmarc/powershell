@@ -90,7 +90,7 @@
 </ul>
 <p>Sets the profile picture of a user.</p>
 <h2 id="syntax">SYNTAX</h2>
-<pre><code class="lang-powershell">Set-PnPUserProfilePhoto -Identity &lt;AzureADUserPipeBind&gt; -Path &lt;String&gt;  [-Connection &lt;PnPConnection&gt;] 
+<pre><code class="lang-powershell">Set-PnPUserProfilePhoto -Identity &lt;EntraIDUserPipeBind&gt; -Path &lt;String&gt;  [-Connection &lt;PnPConnection&gt;] 
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <p>Notice that this cmdlet will immediately return but it can take a few hours before the changes are reflected in profile picture of the user everywhere in M365.</p>
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 </code></pre>
 <h3 id="-identity">-Identity</h3>
 <p>The identity of the user to remove. This can be the UPN, the GUID or an instance of the user.</p>
-<pre><code class="lang-yaml">Type: AzureADUserPipeBind
+<pre><code class="lang-yaml">Type: EntraIDUserPipeBind
 Parameter Sets: (All)
 
 Required: True

@@ -90,7 +90,7 @@
 </ul>
 <p>Removes a new todo list.</p>
 <h2 id="syntax">SYNTAX</h2>
-<pre><code class="lang-powershell">Remove-PnPTodoList [[-Identity] &lt;String&gt;] [-[User] &lt;AzureADUserPipeBind&gt;]
+<pre><code class="lang-powershell">Remove-PnPTodoList [[-Identity] &lt;String&gt;] [-[User] &lt;EntraIDUserPipeBind&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <p>Use the cmdlet to delete a Todo list.</p>
@@ -116,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-user">-User</h3>
-<p>The UPN, Id or instance of an Azure AD user for which you would like to create the todo list.</p>
-<pre><code class="lang-yaml">Type: AzureADUserPipeBind
+<p>The UPN, Id or instance of an Entra ID user for which you would like to create the todo list.</p>
+<pre><code class="lang-yaml">Type: EntraIDUserPipeBind
 Parameter Sets: (All)
 
 Required: False
